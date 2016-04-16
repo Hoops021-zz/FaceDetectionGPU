@@ -16,9 +16,9 @@ NOTE: If using Visual Studio 2015 then use vc14 in all paths below instead of vc
 4) Open Visual studio 2013
 5) Set configuration to x64(configuration manager at top of Debug/Release options)
 6) Right click solution Properties 
-   a) C/C++ -> Additional INclude Directories -> Add "C:\opencv\build\include\"
-   b) Linker -> General -> Additional Libary Dependencies -> Add "C:\opencv\build\x64\vc12\lib\"
-   c) Input -> Additional Dependencies -> Edit 
+	a) C/C++ -> Additional INclude Directories -> Add "C:\opencv\build\include\"
+	b) Linker -> General -> Additional Libary Dependencies -> Add "C:\opencv\build\x64\vc12\lib\"
+	c) Input -> Additional Dependencies -> Edit 
 		1) For Debug config, add "opencv_world310d.lib"
 		2) For Release config, add "opencv_world310.lib"
    
