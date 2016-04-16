@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="FaceDetectMain.cu" />
+    <CudaCompile Include="GPU_Face_Detect.cu" />
+    <CudaCompile Include="GPU_Face_Detect_Kernels.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CPU_Face_Detect.cpp" />
+    <ClCompile Include="CPU_Face_Detect_Multithread.cpp" />
+    <ClCompile Include="OpenCV_Face_Detect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPU_Face_Detect.h" />
+    <ClInclude Include="FaceDetectExtras.h" />
+    <ClInclude Include="GPUHaarCascade.h" />
+    <ClInclude Include="GPU_Face_Detect.cuh" />
+    <ClInclude Include="lock.h" />
+    <ClInclude Include="OpenCV_Face_Detect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data\haarcascade_eye.xml" />
+    <Xml Include="data\haarcascade_frontalface_alt.xml" />
+    <Xml Include="data\haarcascade_frontalface_alt2.xml" />
+    <Xml Include="data\haarcascade_frontalface_default.xml" />
+    <Xml Include="data\haarcascade_mcs_mouth.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\BarcelonaTeam.jpg" />
+    <Image Include="images\lena_1024.jpg" />
+    <Image Include="images\lena_128.jpg" />
+    <Image Include="images\lena_256.jpg" />
+    <Image Include="images\lena_512.jpg" />
+    <Image Include="images\lena_64.jpg" />
+    <Image Include="images\meghan.jpg" />
+    <Image Include="images\soccer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+</Project>
